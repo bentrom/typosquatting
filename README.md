@@ -1,5 +1,5 @@
-typosquatting-analyzer
-======================
+typosquatting
+=============
 
 Perl tool for collecting data about websites and typos of the websites. This version uses MySQL.
 
