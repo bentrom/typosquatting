@@ -119,14 +119,6 @@ sub guesses {
 	return @Guesses;
 }
 
-#List of domain names to be run
-#@Domains = ("www.google.com", "www.facebook.com"
-#	,"www.youtube.com","www.yahoo.com"
-#	,"wikipedia.org","www.twitter.com"
-#	,"www.amazon.com","www.ebay.com"
-#	,"www.craigslist.org","www.paypal.com"
-#);
-
 $sth = $dbh->prepare("INSERT INTO guesses VALUES(?,?,?)");
 $sth2 = $dbh->prepare("UPDATE guesses SET redirect = ? WHERE guess = ?");
 foreach my $domain (@ARGV) {
